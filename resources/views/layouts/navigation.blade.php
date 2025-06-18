@@ -39,9 +39,10 @@
                         {{ __('Order') }}
                     </x-nav-link>
 
-                    <x-nav-link href="favorite" :active="request()->routeIs('user.favorite')">
-                        {{ __('Favorite') }}
+                    <x-nav-link href="wishlist" :active="request()->routeIs('user.wishlist')">
+                        {{ __('Wishlist') }}
                     </x-nav-link>
+
 
                     <x-nav-link href="profile" :active="request()->routeIs('profile.edit')">
                         {{ __('My Profile') }}
@@ -128,8 +129,8 @@
                         {{ __('Order') }}
                     </x-responsive-nav-link>
 
-                    <x-responsive-nav-link href="favorite" :active="request()->routeIs('user.favorite')">
-                        {{ __('Favorite') }}
+                    <x-responsive-nav-link href="wishlist" :active="request()->routeIs('user.wishlist')">
+                        {{ __('Wishlist') }}
                     </x-responsive-nav-link>
 
                     <x-responsive-nav-link href="profile" :active="request()->routeIs('profile.edit')">
