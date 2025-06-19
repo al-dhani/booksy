@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\ProfileController;
@@ -30,6 +31,7 @@ Route::middleware(['auth','userMiddleware'])->group(function(){
     Route::get('dashboard',[UserController::class,'index'])->name('dashboard');
     Route::get('order',[OrderController::class,'index'])->name('order');
     Route::get('wishlist',[WishlistController::class,'index'])->name('user.favorite');
+    Route::get('cart',[CartController::class,'index'])->name('user.cart');
 
 });
 
