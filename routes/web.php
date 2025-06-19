@@ -29,8 +29,8 @@ require __DIR__.'/auth.php';
 Route::middleware(['auth','userMiddleware'])->group(function(){
 
     Route::get('dashboard',[UserController::class,'index'])->name('dashboard');
-    Route::get('order',[OrderController::class,'index'])->name('order');
     Route::get('wishlist',[WishlistController::class,'index'])->name('user.favorite');
+    Route::get('order',[OrderController::class,'index'])->name('order');
     Route::get('cart',[CartController::class,'index'])->name('user.cart');
 
 });
