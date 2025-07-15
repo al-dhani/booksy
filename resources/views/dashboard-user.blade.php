@@ -28,15 +28,6 @@
       Bootin Bookstore
     </h1>
 
-    <!-- Menu (Desktop) -->
-    <nav class="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
-      <a href="#" class="hover:text-rose-500 transition">Home</a>
-      <a href="#" class="hover:text-rose-500 transition">Categories</a>
-      <a href="#" class="hover:text-rose-500 transition">Authors</a>
-      <a href="#" class="hover:text-rose-500 transition">About</a>
-      <a href="#" class="hover:text-rose-500 transition">Contact</a>
-    </nav>
-
     <!-- Login Button -->
     <div class="flex items-center space-x-4">
       <a href="{{ route('login') }}" class="text-sm font-semibold text-white bg-rose-500 hover:bg-rose-600 transition px-4 py-2 rounded shadow">
