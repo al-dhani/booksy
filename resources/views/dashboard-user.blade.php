@@ -3,7 +3,7 @@
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1" name="viewport"/>
   <title>
-   Bootin Bookstore
+   Booksy
   </title>
   <script src="https://cdn.tailwindcss.com">
   </script>
@@ -25,7 +25,7 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
     <!-- Logo -->
     <h1 class="text-lg font-bold logo-font text-gray-900 tracking-widest">
-      Bootin Bookstore
+      Booksy
     </h1>
 
     <!-- Login Button -->

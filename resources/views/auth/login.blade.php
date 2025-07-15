@@ -32,12 +32,22 @@
             </label>
         </div>
 
-        <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
-                </a>
-            @endif
+
+        <div class="flex items-center justify-between flex-wrap gap-4 mt-4">
+    <div class="flex items-center space-x-4">
+        @if (Route::has('password.request'))
+            <a href="{{ route('password.request') }}" class="text-sm text-gray-600 hover:text-gray-900 underline">
+                Forgot your password?
+            </a>
+        @endif
+
+        <div class="flex items-center justify-between flex-wrap gap-4 mt-4">
+    <div class="flex items-center space-x-4">
+        @if (Route::has('register'))
+            <a href="{{ route('register') }}" class="text-sm text-gray-600 hover:text-gray-900 underline">
+                Belum punya akun? Ayo buat sekarang
+            </a>
+        @endif
 
             <x-primary-button class="ms-3">
                 {{ __('Log in') }}
